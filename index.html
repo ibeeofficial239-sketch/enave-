@@ -1,70 +1,186 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> html, body{
-    width:100%;
-    overflow-x:hidden;
-}
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   Opening LogFile...
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   DownloadID = 8 , Protocol = HTTPS , OS = WIN , AppVersion = WinVersion1424
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   DownloadEngine State Changed : Unknown -> Starting...
+DEBUG  2026-06-17 4:12:05 PM ( 1781692925 )   DownloadEngine is Starting...
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   Trying to Start Download for -> https://claude.ai/api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   New Connection(s) Created, MaxAllowedConnection = 8 And ActiveConnections = 1
+DEBUG  2026-06-17 4:12:05 PM ( 1781692925 )   Connection ( 1 )  Connecting to  160.79.104.10:443 ...
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   Initializing SSLHandShake for Connection (1 )
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   Connection(1) SSLHandShake ended Successfully
+DEBUG  2026-06-17 4:12:05 PM ( 1781692925 )   SegmentManager Created a New Segment and now has 1 Segments.
+DEBUG  2026-06-17 4:12:05 PM ( 1781692925 )   Connection ( 1 ) HttpState =  HTTP_STATE_VOID  RoundNumberServer = 0 and RoundNumberProxy = 0
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   Sending Http-GET  for Connection ( 1 )  Range = 0-
+DEBUG  2026-06-17 4:12:05 PM ( 1781692925 )   HttpState Changed for Connection (1)  HTTP_STATE_VOID  ->  HTTP_STATE_GET_SENT 
+INFO   2026-06-17 4:12:05 PM ( 1781692925 )   GET Sent : 
+<< GET /api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html HTTP/1.1
+Host: claude.ai
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: identity
+Accept-Language: en-US,en;q=0.9
+Accept-Charset: *
+Origin: https://claude.ai
+Referer: https://claude.ai/api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html
+Cookie: anthropic-device-id=74b6eb4d-c3d7-49a3-ad14-bbd238d2c9ed; CH-prefers-color-scheme=light; __ssid=765eba0c-09a2-44f9-8597-c360f52a9c46; anthropic-consent-preferences={"analytics":false,"marketing":false}; lastActiveOrg=93abf7d0-7e25-4501-8e7c-4732d0704e9d; ion-vk=87fe4b88-f448-4d7b-a830-61298e70136e; _cfuvid=wY7GKHZCq65OHPo2zVhuoiPqWIGUMbdtjnV069MiLA4-1781687162.2338793-1.0.1.1-7nJ1Q5UZFDyFlWtWOOT5kLK.UjAkC5.X2fR9N0wC7jE; activitySessionId=1692e76e-1a0b-4d60-a0b1-b20b09431b7a; g_state={"i_l":0,"i_ll":1781687177984,"i_e":{"enable_itp_optimization":0},"i_et":1779012722468}; sessionKey=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; sessionKeyLC=1781687175961; routingHint=sk-ant-rh-eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJFUzI1NiIsICJraWQiOiAiN0MxcWFPRnhqdWxaUjRFQnNuNk1UeUZGNWdDV2JHbFpNVDR2RklrRFFpbyJ9.eyJzdWIiOiAiOWJkYWFmOTEtNTFiOS00OGExLTkzMWItMzRjMmE5MTFiYjE5IiwgImlhdCI6IDE3ODE2ODcxNzUsICJpc3MiOiAiY2xhdWRlLWFpLXJvdXRpbmciLCAib25ib2FyZGluZ19jb21wbGV0ZSI6IHRydWUsICJwaG9uZV92ZXJpZmllZCI6IGZhbHNlLCAiYWdlX3ZlcmlmaWVkIjogdHJ1ZSwgIm5hbWUiOiAiaWJyYWhpbW0ifQ.ri-8xlTgQ7W3k4XwKz2VN7cbBK12dMF_u7horCkmME4fuXDVT7dM1GPiha8rKYwqDdbqCdXU7y7Xv5GUMxf9rg; user-sidebar-visible-on-load=true; user-sidebar-pinned=false; __cf_bm=nFBZtxoOwtLDr2glHJ.y_6T2mPRE7ZX6UX1yePjiuVo-1781692721.4352078-1.0.1.1-N6Zpfhr5B.ixUpH.Fy68umB4m.rG.XTJcQpW2SrcWzAGidoSIq5L3CPiDgLQ0D7f4kkLUe698_jd_VtLkTDYNW1QAReTWrLsKkdR__yXJ9aeFVugNuV0nNzpw0sbXZjQ
+Range: bytes=0-
 
-.container{
-    width:100%;
-    padding:15px;
-}
+>>
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   No End-Of-Headers Found in this Response.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   All Response Headers For Connection ( 1 ) :
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   
+<<HTTP/1.1 403 Forbidden
+Date: Wed, 17 Jun 2026 10:41:57 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 6713
+Connection: close
+Accept-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cf-Mitigated: challenge
+Content-Security-Policy: default-src 'none'; script-src 'nonce-bQs8G0pw0QhkYrV37JZPDH' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
+Server: cloudflare
+Critical-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+Orig>>
 
-.login-card{
-    width:100%;
-    max-width:350px;
-}
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_GET_SENT  ->  HTTP_STATE_PARSING_HTTP_HEADER 
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Status Code For Connection (1) = 403
+ERROR  2026-06-17 4:12:06 PM ( 1781692926 )   Handling Error - Connection ( 1 ) - ConnectionState =  HTTP_STATE_PARSING_HTTP_HEADER  ErrorText = Server Closed Connection Suddenly.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   RemainedRetryCount = 3 and Engine is going to try again.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_PARSING_HTTP_HEADER  ->  HTTP_STATE_VOID 
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Connection ( 1 )  Connecting to  160.79.104.10:443 ...
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Initializing SSLHandShake for Connection (1 )
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Connection(1) SSLHandShake ended Successfully
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   SegmentManager Created a New Segment and now has 1 Segments.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Connection ( 1 ) HttpState =  HTTP_STATE_VOID  RoundNumberServer = 0 and RoundNumberProxy = 0
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Sending Http-GET  for Connection ( 1 )  Range = 0-
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_VOID  ->  HTTP_STATE_GET_SENT 
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   GET Sent : 
+<< GET /api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html HTTP/1.1
+Host: claude.ai
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: identity
+Accept-Language: en-US,en;q=0.9
+Accept-Charset: *
+Origin: https://claude.ai
+Referer: https://claude.ai/api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html
+Cookie: anthropic-device-id=74b6eb4d-c3d7-49a3-ad14-bbd238d2c9ed; CH-prefers-color-scheme=light; __ssid=765eba0c-09a2-44f9-8597-c360f52a9c46; anthropic-consent-preferences={"analytics":false,"marketing":false}; lastActiveOrg=93abf7d0-7e25-4501-8e7c-4732d0704e9d; ion-vk=87fe4b88-f448-4d7b-a830-61298e70136e; _cfuvid=wY7GKHZCq65OHPo2zVhuoiPqWIGUMbdtjnV069MiLA4-1781687162.2338793-1.0.1.1-7nJ1Q5UZFDyFlWtWOOT5kLK.UjAkC5.X2fR9N0wC7jE; activitySessionId=1692e76e-1a0b-4d60-a0b1-b20b09431b7a; g_state={"i_l":0,"i_ll":1781687177984,"i_e":{"enable_itp_optimization":0},"i_et":1779012722468}; sessionKey=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; sessionKeyLC=1781687175961; routingHint=sk-ant-rh-eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJFUzI1NiIsICJraWQiOiAiN0MxcWFPRnhqdWxaUjRFQnNuNk1UeUZGNWdDV2JHbFpNVDR2RklrRFFpbyJ9.eyJzdWIiOiAiOWJkYWFmOTEtNTFiOS00OGExLTkzMWItMzRjMmE5MTFiYjE5IiwgImlhdCI6IDE3ODE2ODcxNzUsICJpc3MiOiAiY2xhdWRlLWFpLXJvdXRpbmciLCAib25ib2FyZGluZ19jb21wbGV0ZSI6IHRydWUsICJwaG9uZV92ZXJpZmllZCI6IGZhbHNlLCAiYWdlX3ZlcmlmaWVkIjogdHJ1ZSwgIm5hbWUiOiAiaWJyYWhpbW0ifQ.ri-8xlTgQ7W3k4XwKz2VN7cbBK12dMF_u7horCkmME4fuXDVT7dM1GPiha8rKYwqDdbqCdXU7y7Xv5GUMxf9rg; user-sidebar-visible-on-load=true; user-sidebar-pinned=false; __cf_bm=nFBZtxoOwtLDr2glHJ.y_6T2mPRE7ZX6UX1yePjiuVo-1781692721.4352078-1.0.1.1-N6Zpfhr5B.ixUpH.Fy68umB4m.rG.XTJcQpW2SrcWzAGidoSIq5L3CPiDgLQ0D7f4kkLUe698_jd_VtLkTDYNW1QAReTWrLsKkdR__yXJ9aeFVugNuV0nNzpw0sbXZjQ
+Range: bytes=0-
 
-input,
-button{
-    font-size:16px; /* prevents zoom on iPhone */
-}
+>>
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   No End-Of-Headers Found in this Response.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   All Response Headers For Connection ( 1 ) :
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   
+<<HTTP/1.1 403 Forbidden
+Date: Wed, 17 Jun 2026 10:41:57 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 6713
+Connection: close
+Accept-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cf-Mitigated: challenge
+Content-Security-Policy: default-src 'none'; script-src 'nonce-HO6ToMWT9vfuROzkEu8Lxm' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
+Server: cloudflare
+Critical-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+Orig>>
 
-video{
-    max-width:100%;
-    height:auto;
-}
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_GET_SENT  ->  HTTP_STATE_PARSING_HTTP_HEADER 
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Status Code For Connection (1) = 403
+ERROR  2026-06-17 4:12:06 PM ( 1781692926 )   Handling Error - Connection ( 1 ) - ConnectionState =  HTTP_STATE_PARSING_HTTP_HEADER  ErrorText = Server Closed Connection Suddenly.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   RemainedRetryCount = 2 and Engine is going to try again.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_PARSING_HTTP_HEADER  ->  HTTP_STATE_VOID 
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Connection ( 1 )  Connecting to  160.79.104.10:443 ...
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Initializing SSLHandShake for Connection (1 )
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Connection(1) SSLHandShake ended Successfully
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   SegmentManager Created a New Segment and now has 1 Segments.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Connection ( 1 ) HttpState =  HTTP_STATE_VOID  RoundNumberServer = 0 and RoundNumberProxy = 0
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Sending Http-GET  for Connection ( 1 )  Range = 0-
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_VOID  ->  HTTP_STATE_GET_SENT 
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   GET Sent : 
+<< GET /api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html HTTP/1.1
+Host: claude.ai
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: identity
+Accept-Language: en-US,en;q=0.9
+Accept-Charset: *
+Origin: https://claude.ai
+Referer: https://claude.ai/api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html
+Cookie: anthropic-device-id=74b6eb4d-c3d7-49a3-ad14-bbd238d2c9ed; CH-prefers-color-scheme=light; __ssid=765eba0c-09a2-44f9-8597-c360f52a9c46; anthropic-consent-preferences={"analytics":false,"marketing":false}; lastActiveOrg=93abf7d0-7e25-4501-8e7c-4732d0704e9d; ion-vk=87fe4b88-f448-4d7b-a830-61298e70136e; _cfuvid=wY7GKHZCq65OHPo2zVhuoiPqWIGUMbdtjnV069MiLA4-1781687162.2338793-1.0.1.1-7nJ1Q5UZFDyFlWtWOOT5kLK.UjAkC5.X2fR9N0wC7jE; activitySessionId=1692e76e-1a0b-4d60-a0b1-b20b09431b7a; g_state={"i_l":0,"i_ll":1781687177984,"i_e":{"enable_itp_optimization":0},"i_et":1779012722468}; sessionKey=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; sessionKeyLC=1781687175961; routingHint=sk-ant-rh-eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJFUzI1NiIsICJraWQiOiAiN0MxcWFPRnhqdWxaUjRFQnNuNk1UeUZGNWdDV2JHbFpNVDR2RklrRFFpbyJ9.eyJzdWIiOiAiOWJkYWFmOTEtNTFiOS00OGExLTkzMWItMzRjMmE5MTFiYjE5IiwgImlhdCI6IDE3ODE2ODcxNzUsICJpc3MiOiAiY2xhdWRlLWFpLXJvdXRpbmciLCAib25ib2FyZGluZ19jb21wbGV0ZSI6IHRydWUsICJwaG9uZV92ZXJpZmllZCI6IGZhbHNlLCAiYWdlX3ZlcmlmaWVkIjogdHJ1ZSwgIm5hbWUiOiAiaWJyYWhpbW0ifQ.ri-8xlTgQ7W3k4XwKz2VN7cbBK12dMF_u7horCkmME4fuXDVT7dM1GPiha8rKYwqDdbqCdXU7y7Xv5GUMxf9rg; user-sidebar-visible-on-load=true; user-sidebar-pinned=false; __cf_bm=nFBZtxoOwtLDr2glHJ.y_6T2mPRE7ZX6UX1yePjiuVo-1781692721.4352078-1.0.1.1-N6Zpfhr5B.ixUpH.Fy68umB4m.rG.XTJcQpW2SrcWzAGidoSIq5L3CPiDgLQ0D7f4kkLUe698_jd_VtLkTDYNW1QAReTWrLsKkdR__yXJ9aeFVugNuV0nNzpw0sbXZjQ
+Range: bytes=0-
 
-.profile{
-    width:120px;
-    height:120px;
-}document.getElementById("profileUpload").addEventListener("change", function(e){
-    const file = e.target.files[0];
-    if(!file) return;
+>>
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   No End-Of-Headers Found in this Response.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   All Response Headers For Connection ( 1 ) :
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   
+<<HTTP/1.1 403 Forbidden
+Date: Wed, 17 Jun 2026 10:41:57 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 6713
+Connection: close
+Accept-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cf-Mitigated: challenge
+Content-Security-Policy: default-src 'none'; script-src 'nonce-g9d2w630mjgS8mDY2HpqRI' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
+Server: cloudflare
+Critical-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+Orig>>
 
-    const img = document.getElementById("profilePreview");
-    img.src = URL.createObjectURL(file);
-});
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_GET_SENT  ->  HTTP_STATE_PARSING_HTTP_HEADER 
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Status Code For Connection (1) = 403
+ERROR  2026-06-17 4:12:06 PM ( 1781692926 )   Handling Error - Connection ( 1 ) - ConnectionState =  HTTP_STATE_PARSING_HTTP_HEADER  ErrorText = Server Closed Connection Suddenly.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   RemainedRetryCount = 1 and Engine is going to try again.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_PARSING_HTTP_HEADER  ->  HTTP_STATE_VOID 
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Connection ( 1 )  Connecting to  160.79.104.10:443 ...
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Initializing SSLHandShake for Connection (1 )
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Connection(1) SSLHandShake ended Successfully
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   SegmentManager Created a New Segment and now has 1 Segments.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Connection ( 1 ) HttpState =  HTTP_STATE_VOID  RoundNumberServer = 0 and RoundNumberProxy = 0
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Sending Http-GET  for Connection ( 1 )  Range = 0-
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_VOID  ->  HTTP_STATE_GET_SENT 
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   GET Sent : 
+<< GET /api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html HTTP/1.1
+Host: claude.ai
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+Accept: */*
+Accept-Encoding: identity
+Accept-Language: en-US,en;q=0.9
+Accept-Charset: *
+Origin: https://claude.ai
+Referer: https://claude.ai/api/organizations/93abf7d0-7e25-4501-8e7c-4732d0704e9d/conversations/a3603771-ff85-47c9-acf3-4bea545cf691/wiggle/download-file?path=/mnt/user-data/outputs/tiny-steps-login.html
+Cookie: anthropic-device-id=74b6eb4d-c3d7-49a3-ad14-bbd238d2c9ed; CH-prefers-color-scheme=light; __ssid=765eba0c-09a2-44f9-8597-c360f52a9c46; anthropic-consent-preferences={"analytics":false,"marketing":false}; lastActiveOrg=93abf7d0-7e25-4501-8e7c-4732d0704e9d; ion-vk=87fe4b88-f448-4d7b-a830-61298e70136e; _cfuvid=wY7GKHZCq65OHPo2zVhuoiPqWIGUMbdtjnV069MiLA4-1781687162.2338793-1.0.1.1-7nJ1Q5UZFDyFlWtWOOT5kLK.UjAkC5.X2fR9N0wC7jE; activitySessionId=1692e76e-1a0b-4d60-a0b1-b20b09431b7a; g_state={"i_l":0,"i_ll":1781687177984,"i_e":{"enable_itp_optimization":0},"i_et":1779012722468}; sessionKey=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; sessionKeyLC=1781687175961; routingHint=sk-ant-rh-eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJFUzI1NiIsICJraWQiOiAiN0MxcWFPRnhqdWxaUjRFQnNuNk1UeUZGNWdDV2JHbFpNVDR2RklrRFFpbyJ9.eyJzdWIiOiAiOWJkYWFmOTEtNTFiOS00OGExLTkzMWItMzRjMmE5MTFiYjE5IiwgImlhdCI6IDE3ODE2ODcxNzUsICJpc3MiOiAiY2xhdWRlLWFpLXJvdXRpbmciLCAib25ib2FyZGluZ19jb21wbGV0ZSI6IHRydWUsICJwaG9uZV92ZXJpZmllZCI6IGZhbHNlLCAiYWdlX3ZlcmlmaWVkIjogdHJ1ZSwgIm5hbWUiOiAiaWJyYWhpbW0ifQ.ri-8xlTgQ7W3k4XwKz2VN7cbBK12dMF_u7horCkmME4fuXDVT7dM1GPiha8rKYwqDdbqCdXU7y7Xv5GUMxf9rg; user-sidebar-visible-on-load=true; user-sidebar-pinned=false; __cf_bm=nFBZtxoOwtLDr2glHJ.y_6T2mPRE7ZX6UX1yePjiuVo-1781692721.4352078-1.0.1.1-N6Zpfhr5B.ixUpH.Fy68umB4m.rG.XTJcQpW2SrcWzAGidoSIq5L3CPiDgLQ0D7f4kkLUe698_jd_VtLkTDYNW1QAReTWrLsKkdR__yXJ9aeFVugNuV0nNzpw0sbXZjQ
+Range: bytes=0-
 
-document.getElementById("bgUpload").addEventListener("change", function(e){
-    const file = e.target.files[0];
-    if(!file) return;
+>>
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   No End-Of-Headers Found in this Response.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   All Response Headers For Connection ( 1 ) :
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   
+<<HTTP/1.1 403 Forbidden
+Date: Wed, 17 Jun 2026 10:41:58 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 6713
+Connection: close
+Accept-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cf-Mitigated: challenge
+Content-Security-Policy: default-src 'none'; script-src 'nonce-7HU3YD64yaK75fWIEEu1tZ' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
+Server: cloudflare
+Critical-Ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+Orig>>
 
-    const url = URL.createObjectURL(file);
-    document.getElementById("dashboard").style.backgroundImage =
-        `url('${url}')`;
-});
-
-document.getElementById("videoUpload").addEventListener("change", function(e){
-    const file = e.target.files[0];
-    if(!file) return;
-
-    const video = document.getElementById("videoPlayer");
-    video.src = URL.createObjectURL(file);
-    video.load();
-});function login() {
-    const user =
-        document.getElementById("username").value.trim().toLowerCase();
-
-    const pass =
-        document.getElementById("password").value.trim();
-
-    if (user === "shafrina" && pass === "arham") {
-
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("dashboard").style.display = "block";
-
-        showEmojis();
-
-    } else {
-        alert("Invalid Username or Password");
-    }
-}
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_GET_SENT  ->  HTTP_STATE_PARSING_HTTP_HEADER 
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   Status Code For Connection (1) = 403
+ERROR  2026-06-17 4:12:06 PM ( 1781692926 )   Handling Error - Connection ( 1 ) - ConnectionState =  HTTP_STATE_PARSING_HTTP_HEADER  ErrorText = Server Closed Connection Suddenly.
+ERROR  2026-06-17 4:12:06 PM ( 1781692926 )   Server Closed Connection Suddenly.
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   DownloadEngine State Changed : Starting... ( 4 ) -> Error
+ERROR  2026-06-17 4:12:06 PM ( 1781692926 )   Error Occurred. Server Closed Connection Suddenly.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   DownloadEngine Is Terminating, EngineState = Error.
+DEBUG  2026-06-17 4:12:06 PM ( 1781692926 )   HttpState Changed for Connection (1)  HTTP_STATE_PARSING_HTTP_HEADER  ->  HTTP_STATE_VOID 
+INFO   2026-06-17 4:12:06 PM ( 1781692926 )   Closing LogFile.
