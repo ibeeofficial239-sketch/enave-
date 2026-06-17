@@ -94,6 +94,37 @@ p{
 
     <p>Welcome ❤️</p>
 </div>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome Shafrina ❤️</h1>
+    <p>Login Successful!</p>
 </body>
 </html>
+</body>
+</html>
+<form onsubmit="return login()">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <button type="submit">Login</button>
+</form>
+
+<script>
+function login() {
+
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user === "shafrina" && pass === "arham") {
+        window.location.href = "home.html";
+    } else {
+        alert("Wrong Username or Password");
+    }
+
+    return false;
+}
+</script>
