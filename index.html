@@ -1,10 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>En Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mom & Son Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* Amma baby-a thooki irukkura image */
+    background:url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.login-box{
+    position:relative;
+    z-index:2;
+    width:350px;
+    background:rgba(255,255,255,0.95);
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#ff6b81;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#ff6b81;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff4d6d;
+}
+
+p{
+    margin-top:15px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Vanakkam!</h1>
-    <p>Idhu en mudhal website.</p>
+
+<div class="overlay"></div>
+
+<div class="login-box">
+    <div class="logo">Mom & Son</div>
+
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Welcome ❤️</p>
+</div>
+
 </body>
 </html>
