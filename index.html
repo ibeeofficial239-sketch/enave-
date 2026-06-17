@@ -1,319 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="media-gallery">
 
-<title>Tiny Steps Login</title>
+    <h2>My Little Star ✨</h2>
 
-<style>
+    <div class="image-grid">
+        <img src="baby1.jpg" alt="Baby Photo">
+        <img src="baby2.jpg" alt="Baby Photo">
+    </div>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+    <div class="video-box">
+        <video controls>
+            <source src="baby-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>     
+.media-gallery{
+    margin-top:30px;
 }
 
-body{
-background:linear-gradient(90deg,#f6f3e8,#eefcff);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
+.media-gallery h2{
+    color:#ff6fa5;
+    margin-bottom:20px;
 }
 
-.container{
-width:100%;
-max-width:420px;
+.image-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
 }
 
-.logo{
-text-align:center;
-margin-bottom:20px;
+.image-grid img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
-.logo .baby{
-font-size:70px;
-animation:bounce 2s infinite;
+.video-box{
+    margin-top:20px;
 }
 
-.logo h1{
-color:#d96cb5;
-font-size:36px;
-margin-top:10px;
+.video-box video{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
-.logo p{
-color:#777;
-font-size:16px;
+<button class="next-btn" onclick="showThankYou()">
+Next ➜
+</button>
+.next-btn{
+    position:fixed;
+    top:15px;
+    right:15px;
+    border:none;
+    padding:12px 18px;
+    border-radius:50px;
+    background:linear-gradient(45deg,#ff8db6,#ffb84d);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+} 
+function showThankYou(){
+    document.getElementById("dashboard").style.display="none";
+    document.getElementById("thankyou").style.display="flex";
+}
+<div id="thankyou" class="thankyou-page">
+
+    <div class="hearts">💖✨🎉😍💖✨</div>
+
+    <h1>Thank You ❤️</h1>
+
+    <h2>
+        Thank you for watching.<br>
+        Please give the money.
+    </h2>
+
+</div> 
+.thankyou-page{
+    display:none;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(135deg,#ffe1f0,#fff7d6,#dff9ff);
+    animation:fadeIn 1s ease;
 }
 
-.card{
-background:white;
-border-radius:30px;
-padding:30px;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
+.thankyou-page h1{
+    color:#ff5e9b;
+    font-size:48px;
 }
 
-.card h2{
-font-size:34px;
-color:#5b4a8d;
-margin-bottom:10px;
+.thankyou-page h2{
+    color:#6b5b95;
+    margin-top:20px;
 }
 
-.subtitle{
-color:#777;
-margin-bottom:25px;
+.hearts{
+    font-size:50px;
+    animation:bounce 1.5s infinite;
 }
-
-label{
-display:block;
-margin-bottom:8px;
-font-weight:600;
-color:#555;
-}
-
-input{
-width:100%;
-padding:15px;
-border:2px solid #ffd1df;
-border-radius:15px;
-outline:none;
-font-size:16px;
-margin-bottom:20px;
-transition:.3s;
-}
-
-input:focus{
-border-color:#ff82a8;
-box-shadow:0 0 10px rgba(255,130,168,.3);
-}
-
-button{
-width:100%;
-padding:16px;
-border:none;
-border-radius:15px;
-background:#ff7ca5;
-color:white;
-font-size:18px;
-font-weight:700;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-transform:translateY(-3px);
-}
-
-button:active{
-transform:scale(.95);
-}
-
-.error{
-text-align:center;
-color:red;
-margin-top:10px;
-}
-
-.dashboard{
-display:none;
-text-align:center;
-padding:20px;
-}
-
-.welcome{
-font-size:32px;
-color:#5b4a8d;
-margin-bottom:15px;
-}
-
-.emoji{
-font-size:70px;
-animation:bounce 1s infinite;
-}
-
-.upload{
-margin-top:25px;
-background:white;
-padding:20px;
-border-radius:20px;
-}
-
-.profile{
-width:120px;
-height:120px;
-border-radius:50%;
-object-fit:cover;
-display:block;
-margin:auto;
-margin-bottom:15px;
-border:4px solid pink;
-}
-
-video{
-width:100%;
-margin-top:15px;
-border-radius:15px;
-}
-
-@keyframes bounce{
-0%,100%{
-transform:translateY(0);
-}
-50%{
-transform:translateY(-10px);
-}
-}
-
-@media(max-width:480px){
-
-.logo h1{
-font-size:28px;
-}
-
-.card{
-padding:22px;
-}
-
-.card h2{
-font-size:28px;
-}
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<div id="loginPage">
-
-<div class="logo">
-<div class="baby">👶</div>
-<h1>Tiny Steps</h1>
-<p>A cozy little corner, just for you 🌙</p>
-</div>
-
-<div class="card">
-
-<h2>Welcome Back!</h2>
-<p class="subtitle">Sign in to continue</p>
-
-<label>Username</label>
-<input type="text" id="username">
-
-<label>Password</label>
-<input type="password" id="password">
-
-<button onclick="login()">Log In</button>
-
-<div class="error" id="error"></div>
-
-</div>
-
-</div>
-
-<div class="dashboard" id="dashboard">
-
-<div class="emoji">😊🎉😍</div>
-
-<h1 class="welcome">
-Welcome, Shafrina!
-</h1>
-
-<div class="upload">
-
-<img
-id="profile"
-class="profile"
-src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
-
-<p><b>Upload Profile Image</b></p>
-<input type="file" id="profileUpload" accept="image/*">
-
-<br><br>
-
-<p><b>Set Background</b></p>
-<input type="file" id="bgUpload" accept="image/*">
-
-<br><br>
-
-<p><b>Upload Video</b></p>
-<input type="file" id="videoUpload" accept="video/*">
-
-<video id="videoPlayer" controls></video>
-
-</div>
-
-</div>
-
-</div>
-
-<script>
-
-function login(){
-
-let user =
-document.getElementById("username").value.trim();
-
-let pass =
-document.getElementById("password").value.trim();
-
-if(user==="shafrina" && pass==="arham"){
-
-document.getElementById("loginPage").style.display="none";
-document.getElementById("dashboard").style.display="block";
-
-}else{
-
-document.getElementById("error").innerHTML =
-"Wrong username or password!";
-}
-}
-
-profileUpload.onchange = function(){
-
-const file = this.files[0];
-
-if(file){
-
-document.getElementById("profile").src =
-URL.createObjectURL(file);
-
-}
-};
-
-bgUpload.onchange = function(){
-
-const file = this.files[0];
-
-if(file){
-
-document.body.style.backgroundImage =
-`url(${URL.createObjectURL(file)})`;
-
-document.body.style.backgroundSize="cover";
-document.body.style.backgroundPosition="center";
-}
-};
-
-videoUpload.onchange = function(){
-
-const file = this.files[0];
-
-if(file){
-
-videoPlayer.src =
-URL.createObjectURL(file);
-
-}
-};
-
-</script>
-
-</body>
-</html>
